@@ -1,0 +1,22 @@
+{
+  "model_name": "SVM RBF",
+  "model_file": "modelo_seleccionado.joblib",
+  "features": [
+    "Pregnancies",
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age"
+  ],
+  "target": "Outcome",
+  "decision_function_threshold": 0.0,
+  "classification_rule": "Outcome positivo si decision_function > 0",
+  "random_state": 42,
+  "model_retrained_for_app": false,
+  "hyperparameters_modified_for_app": false,
+  "threshold_modified_for_app": false,
+  "calibration_note": "La calibracion sigmoid del notebook 07 fue un analisis complementario. El objeto calibrated_model no fue serializado como artefacto de despliegue; por tanto, esta aplicacion utiliza el modelo final congelado para clasificacion y su decision_function como score continuo."
+}
